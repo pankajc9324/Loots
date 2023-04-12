@@ -229,7 +229,7 @@ def MergeSort(mylist):
         k=0
 
         while i<len(leftlist) and j<len(rightlist):
-            if leftlist[i] < leftlist[j]:
+            if leftlist[i] < rightlist[j]:
                 mylist[k] = leftlist[i]
                 i+=1
             else:
@@ -250,6 +250,7 @@ mylist = [12,23,57,8,9,1,2,0,24]
 print("Unsorted List : ", mylist)
 sorted_list = MergeSort(mylist)
 print("Sorted List : ", sorted_list)
+
 
 
 output: -
